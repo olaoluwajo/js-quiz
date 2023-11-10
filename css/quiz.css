@@ -1,0 +1,84 @@
+body {
+  margin: 1rem auto;
+  padding: 3rem;
+  background-image: url(/img/jsvue.jpg);
+  background-size: cover;
+  background-position: center;
+
+  font-family: sans-serif;
+  backdrop-filter: blur(10px);
+}
+header {
+  width: 50%;
+  margin: 1em auto;
+  color: #fff;
+}
+.container {
+  overflow: none;
+  border: 2px solid black;
+  max-width: 50vw;
+  height: 85vh;
+  text-align: center;
+  margin:  auto;
+  box-shadow:5px 10px 20px rgb(0, 0, 0,0.6);
+
+  background-image: url(/img/jsvue.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 70px;
+  text-decoration: underline;
+  backdrop-filter: blur(4px);
+
+}
+p {
+  font-size: 30px;
+}
+main {
+  min-width: 25rem;
+  max-width: 40%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+#statement {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: x-large;
+  text-align: center;
+  margin: 1rem 0px;
+  min-height: 2em;
+color: #000;
+  background: #fff;
+}
+#explanation, #score {
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+#options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  padding: 0.5rem;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.correct {
+  background-color: green;
+}
+.incorrect {
+  background-color: red;
+}
+.hidden {
+  display: none;
+}
