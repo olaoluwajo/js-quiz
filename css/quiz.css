@@ -4,7 +4,7 @@ body {
   background-image: url(/img/jsvue.jpg);
   background-size: cover;
   background-position: center;
-
+overflow: hidden;
   font-family: sans-serif;
   backdrop-filter: blur(10px);
 }
@@ -37,8 +37,8 @@ p {
   font-size: 30px;
 }
 main {
-  min-width: 25rem;
-  max-width: 40%;
+   width: 25rem; 
+  /* max-width: 40%;  */
   margin: 0px auto;
   display: flex;
   flex-direction: column;

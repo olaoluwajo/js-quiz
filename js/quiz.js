@@ -1,14 +1,11 @@
-let correct = 0;
-let completed = 0;
 
-let fact;
 
-//  Declare & assign variables pointing to the corresponding element(s)
+// variables pointing to the corresponding element(s)
 const nextButton = document.getElementById("next-question");
 const optionButtons = document.querySelector("#options").children;
 const explanation = document.getElementById("explanation");
 
-// Its value should be an object with a statement, true/false answer, and explanation
+// questions: true/false answer, and explanation
 const facts = [
   {
     statement: "JavaScript was invented in 1995",
@@ -46,6 +43,7 @@ const facts = [
   },
 ];
 
+
 function hide(element) {
   element.classList.add("hidden");
 }
@@ -61,6 +59,12 @@ function disable(button) {
 function enable(button) {
   button.removeAttribute("disabled");
 }
+
+let correct = 0;
+let completed = 0;
+
+let fact;
+
 
 // get the first fact in our array (shortening the array)
 function getNextFact() {
