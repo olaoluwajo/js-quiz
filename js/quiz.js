@@ -1,5 +1,3 @@
-
-
 // variables pointing to the corresponding element(s)
 const nextButton = document.getElementById("next-question");
 const optionButtons = document.querySelector("#options").children;
@@ -37,12 +35,11 @@ const facts = [
       "Arrays have the type 'object'. In JS, everything is either a primitive data type (e.g. 'string', 'number') or an object. Arrays are a kind of object with some special properties.  ",
   },
   {
-    statement: "Arrays are like objects",
+    statement: "Arrays are l7yuike objects",
     answer: true,
     explanation: "Arrays are a kind of object with special properties",
   },
 ];
-
 
 function hide(element) {
   element.classList.add("hidden");
@@ -65,7 +62,6 @@ let completed = 0;
 
 let fact;
 
-
 // get the first fact in our array (shortening the array)
 function getNextFact() {
   fact = facts.shift();
@@ -78,7 +74,7 @@ function getNextFact() {
     // clear any previous classes
     option.classList.remove("correct");
     option.classList.remove("incorrect");
-    // make sure buttons are enabled
+    // making sure buttons are enabled
     enable(option);
   }
   // disable next-question button
@@ -98,7 +94,8 @@ for (let option of optionButtons) {
     if (facts.length > 0) {
       enable(nextButton);
     } else {
-      nextButton.textContent = "No more questions!";
+      enable(nextButton);
+      nextButton.textContent = "YOUR SCORE!";
     }
 
     const guess = e.target.value;
@@ -108,7 +105,7 @@ for (let option of optionButtons) {
       correct += 1;
     } else {
       // wrong answer!
-      e.target.classList.add("incorrect");
+      e.target.classList.add("incorrect");  
     }
 
     // display the explanation
@@ -116,7 +113,7 @@ for (let option of optionButtons) {
     show(explanation);
 
     // update the score
-    completed += 1;
+    completed = 6;
     document.getElementById("correct").textContent = correct;
     document.getElementById("completed").textContent = completed;
   });

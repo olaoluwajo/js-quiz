@@ -4,7 +4,7 @@ body {
   background-image: url(/img/jsvue.jpg);
   background-size: cover;
   background-position: center;
-overflow: hidden;
+  overflow: hidden;
   font-family: sans-serif;
   backdrop-filter: blur(10px);
 }
@@ -19,8 +19,8 @@ header {
   max-width: 50vw;
   height: 85vh;
   text-align: center;
-  margin:  auto;
-  box-shadow:5px 10px 20px rgb(0, 0, 0,0.6);
+  margin: auto;
+  box-shadow: 5px 10px 20px rgb(0, 0, 0, 0.6);
 
   background-image: url(/img/jsvue.jpg);
   background-position: center;
@@ -31,13 +31,12 @@ h1 {
   font-size: 70px;
   text-decoration: underline;
   backdrop-filter: blur(4px);
-
 }
 p {
   font-size: 30px;
 }
 main {
-   width: 25rem; 
+  width: 25rem;
   /* max-width: 40%;  */
   margin: 0px auto;
   display: flex;
@@ -53,10 +52,11 @@ main {
   text-align: center;
   margin: 1rem 0px;
   min-height: 2em;
-color: #000;
+  color: #000;
   background: #fff;
 }
-#explanation, #score {
+#explanation,
+#score {
   padding: 1rem;
   text-align: center;
   color: #fff;
